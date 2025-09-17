@@ -3,8 +3,9 @@ export default function Home() {
     <main>
       <h2>Welcome</h2>
       <p>
-        This is the personal site of Evgenii Bogomazov-Pusser — architect,
-        reformer, and FullStack developer.
+        This is the personal site of Evgenii Pusser — an entrepreneur,
+        innovator, and musician (composer, multi-instrumentalist, arranger,
+        singer, and bandleader), as well as a poet and reformer.
       </p>
     </main>
   );

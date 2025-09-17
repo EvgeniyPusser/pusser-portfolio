@@ -11,23 +11,25 @@ export default function DeveloperProjects() {
       desc: "Multi-story residential complex: land rights, approvals, construction — all delivered.",
     },
     {
-      title: "Private house on Kamenny Island",
-      img: house2,
-      desc: "End-to-end development in St. Petersburg’s most exclusive district.",
-    },
-    {
       title: "Southern Provincial style by V. Pitanin",
       img: house3,
       desc: "Architectural concept realized with full legal and planning compliance.",
+    },
+    {
+      title: "Private house on Kamenny Island",
+      img: house2,
+      desc: "End-to-end development in St. Petersburg’s most exclusive district.",
     },
   ];
 
   return (
     <main>
       <h2>Developer Projects</h2>
-      {projects.map((p, index) => (
-        <ProjectCard key={index} title={p.title} img={p.img} desc={p.desc} />
-      ))}
+      <div className="grid-projects">
+        <ProjectCard {...projects[0]} imgClass="img1" />
+        <ProjectCard {...projects[1]} imgClass="img2" />
+        <ProjectCard {...projects[2]} imgClass="img3" />
+      </div>
     </main>
   );
 }
