@@ -16,7 +16,15 @@ export default function Support() {
         <button type="submit">💳 Donate with PayPal</button>
       </form>
 
-      <a href="https://fundrazr.com/62cOV7" target="_blank">
+      {/* <a href="https://fundrazr.com/62cOV7" target="_blank">
+        <button>🌍 Support on FundRazr</button>
+      </a> */}
+
+      <a
+        href="https://fundrazr.com/62cOV7"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <button>🌍 Support on FundRazr</button>
       </a>
     </main>
