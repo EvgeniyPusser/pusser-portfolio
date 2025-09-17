@@ -26,6 +26,12 @@ export default function BlockchainHousing() {
       img: smartcontracts,
       desc: "This project leverages blockchain technology to create transparent systems of shared ownership for multi-apartment buildings, residential communities, and local infrastructure such as roads and utilities. Within condominiums, blockchain can record and manage ownership rights, enabling the collective formation of investment resources that residents can use for personal or community projects.",
     },
+
+    {
+      title: "Blockchain for Informal Settlements",
+      img: blockchain,
+      desc: "A second application is the use of blockchain to record and verify actual usage of land and housing in informal settlements and conflict zones (for example, in the Gaza Strip). Even where property use is not legally recognized, blockchain can provide a transparent, immutable record of occupation and resource sharing, supporting accountability, reducing disputes, and laying the groundwork for future regularization.",
+    },
   ];
 
   return (
