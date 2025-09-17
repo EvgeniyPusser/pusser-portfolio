@@ -20,6 +20,12 @@ export default function BlockchainHousing() {
       img: smartcontracts,
       desc: "Designed a system where payments and service requests are automatically recorded and verified, reducing fraud and increasing accountability in housing services.",
     },
+
+    {
+      title: "Shared Ownership Models",
+      img: smartcontracts,
+      desc: "This project leverages blockchain technology to create transparent systems of shared ownership for multi-apartment buildings, residential communities, and local infrastructure such as roads and utilities. Within condominiums, blockchain can record and manage ownership rights, enabling the collective formation of investment resources that residents can use for personal or community projects.",
+    },
   ];
 
   return (
