@@ -1,8 +1,10 @@
+import bgImage from "../assets/backGroundGluck.png";
+
 export default function About() {
   return (
     <main
       style={{
-        backgroundImage: "url('/backGroundGluck.png')",
+        backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
