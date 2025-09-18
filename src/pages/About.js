@@ -1,6 +1,15 @@
 export default function About() {
   return (
-    <main>
+    <main
+      style={{
+        backgroundImage: "url('/backGroundGluck.png')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        minHeight: "100vh", // чтобы фон тянулся на весь экран
+        padding: "2rem",
+      }}
+    >
       <h2>About Me</h2>
       <p>
         I am Evgenii Bogomazov-Pusser, an entrepreneur, innovator, and musician
