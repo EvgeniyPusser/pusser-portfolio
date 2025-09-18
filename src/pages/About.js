@@ -1,4 +1,4 @@
-import bgImage from "../assets/backGroundGluck.png";
+import bgImage from "../assets/backGroundGluck.jpg";
 
 export default function About() {
   return (
