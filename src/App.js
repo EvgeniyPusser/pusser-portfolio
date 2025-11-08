@@ -8,6 +8,7 @@ import Support from "./pages/Support";
 import BlockchainHousing from "./pages/BlockchainHousing";
 import DeveloperProjects from "./pages/DeveloperProjects";
 import ReconstructionLaw from "./pages/ReconstructionLaw";
+import Manifest from "./pages/Manifest";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blockchain" element={<BlockchainHousing />} />
         <Route path="/developer" element={<DeveloperProjects />} />
         <Route path="/reconstruction" element={<ReconstructionLaw />} />
+        <Route path="/manifest" element={<Manifest />} />
       </Routes>
       <Footer />
     </Router>
