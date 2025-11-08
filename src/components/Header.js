@@ -10,7 +10,8 @@ export default function Header() {
         <Link to="/support">Support</Link> |
         <Link to="/developer">Developer</Link> |
         <Link to="/blockchain">Blockchain</Link> |
-        <Link to="/reconstruction">Reconstruction</Link>
+        <Link to="/reconstruction">Reconstruction</Link> |
+        <Link to="/manifest">Manifest</Link>
       </nav>
     </header>
   );
