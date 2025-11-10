@@ -1,6 +1,6 @@
 import React from "react";
 import "./AutogenicManifest.css";
-import livingCity1 from "../assets/living_city_1.png";
+import livingCity1 from "../assets/living_city_1png";
 import livingCity2 from "../assets/living_city_2.png";
 import livingCity3 from "../assets/living_city_3.png";
 
