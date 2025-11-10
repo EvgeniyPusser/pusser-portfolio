@@ -12,13 +12,15 @@ export default function Header() {
             <Link to="/education">Education</Link>
             <Link to="/support">Support</Link>
           </div>
-        </div> |
+        </div>{" "}
+        |
         <div className="nav-section">
           <span className="section-title">Music</span>
           <div className="nav-dropdown">
             <Link to="/about">Music</Link>
           </div>
-        </div> |
+        </div>{" "}
+        |
         <div className="nav-section">
           <span className="section-title">Projects</span>
           <div className="nav-dropdown">
