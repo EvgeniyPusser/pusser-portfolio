@@ -19,7 +19,7 @@ export default function Header() {
           <div className="nav-dropdown">
             <Link to="/about">Portfolio</Link>
             <Link to="/videos">Videos</Link>
-            <Link to="/poetry">Стихи</Link>
+            <Link to="/poetry">Poetry & Collages</Link>
           </div>
         </div> |
         |
