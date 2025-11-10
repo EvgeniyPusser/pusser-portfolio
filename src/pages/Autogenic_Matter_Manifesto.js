@@ -1,5 +1,8 @@
 import React from "react";
 import "./AutogenicManifest.css";
+import livingCity1 from "../assets/living_city_1.png";
+import livingCity2 from "../assets/living_city_2.png";
+import livingCity3 from "../assets/living_city_3.png";
 
 export default function AutogenicManifest() {
   return (
@@ -8,7 +11,7 @@ export default function AutogenicManifest() {
 
       <section>
         <img
-          src="../assets/living_city_1.png"
+          src={livingCity1}
           alt="Living City Bio-Metabolic Civilization"
           className="manifest-img"
         />
@@ -31,7 +34,7 @@ export default function AutogenicManifest() {
         </p>
 
         <img
-          src="../assets/living_city_2.png"
+          src={livingCity2}
           alt="Living City Biomechanosphere"
           className="manifest-img"
         />
@@ -57,7 +60,7 @@ export default function AutogenicManifest() {
         </p>
 
         <img
-          src="../assets/living_city_3.png"
+          src={livingCity3}
           alt="Urban Metabolic Infrastructure"
           className="manifest-img"
         />

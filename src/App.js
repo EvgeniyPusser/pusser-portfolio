@@ -9,7 +9,7 @@ import BlockchainHousing from "./pages/BlockchainHousing";
 import DeveloperProjects from "./pages/DeveloperProjects";
 import ReconstructionLaw from "./pages/ReconstructionLaw";
 import Manifest from "./pages/Manifest";
-import AutogenicManifest from "./pages/AutogenicManifest";
+import AutogenicManifest from "./pages/Autogenic_Matter_Manifesto";
 
 function App() {
   return (
