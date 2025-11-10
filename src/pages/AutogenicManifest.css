@@ -54,8 +54,10 @@
 }
 
 .manifest-img {
-  width: 100%;
-  margin: 2em 0;
+  width: 50%;
+    max-width: 600px;
+    margin: 2em auto;
   border-radius: 10px;
   opacity: 0.95;
+  display: block;
 }
