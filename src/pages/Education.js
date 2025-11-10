@@ -6,7 +6,7 @@ export default function Education() {
       <section>
         <h3>Current Studies</h3>
         <ul>
-          <li><strong>Java Full Stack Course</strong> - Tel-Ran, Israel (Currently completing)</li>
+          <li><strong>Java Full Stack Course</strong> - GeekBrains School, Russia (Currently completing)</li>
         </ul>
       </section>
 
