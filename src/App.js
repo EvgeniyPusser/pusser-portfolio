@@ -11,6 +11,7 @@ import ReconstructionLaw from "./pages/ReconstructionLaw";
 import Manifest from "./pages/Manifest";
 import AutogenicManifest from "./pages/Autogenic_Matter_Manifesto";
 import Videos from "./pages/Videos";
+import Poetry from "./pages/Poetry";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/manifest" element={<Manifest />} />
         <Route path="/autogenic" element={<AutogenicManifest />} />
         <Route path="/videos" element={<Videos />} />
+        <Route path="/poetry" element={<Poetry />} />
       </Routes>
       <Footer />
     </Router>

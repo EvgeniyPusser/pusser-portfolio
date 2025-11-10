@@ -15,10 +15,11 @@ export default function Header() {
         </div>{" "}
         |
         <div className="nav-section">
-          <span className="section-title">Music</span>
+          <span className="section-title">Music and Art</span>
           <div className="nav-dropdown">
             <Link to="/about">Portfolio</Link>
             <Link to="/videos">Videos</Link>
+            <Link to="/poetry">Стихи</Link>
           </div>
         </div> |
         |
