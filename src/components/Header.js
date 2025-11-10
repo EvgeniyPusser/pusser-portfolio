@@ -17,9 +17,9 @@ export default function Header() {
         <div className="nav-section">
           <span className="section-title">Music</span>
           <div className="nav-dropdown">
-            <Link to="/about">Music</Link>
+            <Link to="/about">Portfolio</Link>
           </div>
-        </div>{" "}
+        </div> |
         |
         <div className="nav-section">
           <span className="section-title">Projects</span>
