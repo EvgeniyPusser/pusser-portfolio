@@ -21,8 +21,8 @@ export default function Header() {
             <Link to="/videos">Videos</Link>
             <Link to="/poetry">Poetry & Collages</Link>
           </div>
-        </div> |
-        |
+        </div>{" "}
+        | |
         <div className="nav-section">
           <span className="section-title">Projects</span>
           <div className="nav-dropdown">
