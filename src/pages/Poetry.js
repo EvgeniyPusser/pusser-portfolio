@@ -37,7 +37,7 @@ export default function Poetry() {
           </a>
 
           <a
-            href="https://stihi.ru/poems/"
+            href="https://stihi.ru/avtor/pusser88"
             target="_blank"
             rel="noopener noreferrer"
             style={{
