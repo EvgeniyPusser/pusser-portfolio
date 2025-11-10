@@ -9,6 +9,7 @@ import BlockchainHousing from "./pages/BlockchainHousing";
 import DeveloperProjects from "./pages/DeveloperProjects";
 import ReconstructionLaw from "./pages/ReconstructionLaw";
 import Manifest from "./pages/Manifest";
+import AutogenicManifest from "./pages/AutogenicManifest";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/developer" element={<DeveloperProjects />} />
         <Route path="/reconstruction" element={<ReconstructionLaw />} />
         <Route path="/manifest" element={<Manifest />} />
+        <Route path="/autogenic" element={<AutogenicManifest />} />
       </Routes>
       <Footer />
     </Router>

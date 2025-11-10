@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+.manifest {
+  background-color: #060606;
+  color: #e6e6e6;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.8;
+  min-height: 100vh;
+  padding: 80px 10%;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.manifest h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 3.5em;
+  color: rgba(180, 255, 120, 0.8);
+  text-align: center;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.manifest section {
+  max-width: 850px;
+  margin: 0 auto;
+  border-left: 2px solid rgba(180, 255, 120, 0.3);
+  padding-left: 2em;
+}
+
+.manifest p {
+  margin-bottom: 1.5em;
+}
+
+.manifest em {
+  color: rgba(180, 255, 120, 0.8);
+  font-style: normal;
+}
+
+.manifest footer {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.manifest-img {
+  width: 100%;
+  margin: 2em 0;
+  border-radius: 10px;
+  opacity: 0.95;
+}
