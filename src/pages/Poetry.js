@@ -13,7 +13,7 @@ export default function Poetry() {
             display: "flex",
             gap: "1rem",
             justifyContent: "center",
-            flexWrap: "wrap"
+            flexWrap: "wrap",
           }}
         >
           <a
