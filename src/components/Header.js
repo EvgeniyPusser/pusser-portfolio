@@ -18,6 +18,7 @@ export default function Header() {
           <span className="section-title">Music</span>
           <div className="nav-dropdown">
             <Link to="/about">Portfolio</Link>
+            <Link to="/videos">Videos</Link>
           </div>
         </div> |
         |
