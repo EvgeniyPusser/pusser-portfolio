@@ -10,6 +10,10 @@ export default function Poetry() {
           style={{
             textAlign: "center",
             margin: "2rem 0",
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+            flexWrap: "wrap"
           }}
         >
           <a
@@ -29,7 +33,26 @@ export default function Poetry() {
               boxShadow: "0 4px 12px rgba(188,24,136,0.3)",
             }}
           >
-            📖 Читать в Instagram →
+            📖 Instagram
+          </a>
+
+          <a
+            href="https://stihi.ru/poems/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              padding: "1rem 2rem",
+              background: "#4a90e2",
+              color: "white",
+              textDecoration: "none",
+              borderRadius: "8px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              boxShadow: "0 4px 12px rgba(74,144,226,0.3)",
+            }}
+          >
+            📝 Stihi.ru
           </a>
         </div>
 
