@@ -8,7 +8,11 @@ export default function Videos() {
         
         <div style={{
           textAlign: "center",
-          margin: "2rem 0"
+          margin: "2rem 0",
+          display: "flex",
+          gap: "1rem",
+          justifyContent: "center",
+          flexWrap: "wrap"
         }}>
           <a
             href="https://www.youtube.com/@evgeniypusser4562/videos"
@@ -27,6 +31,25 @@ export default function Videos() {
             }}
           >
             🎥 Watch on YouTube →
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/p/1A372WBq2k/?mibextid=oFDknk"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              padding: "1rem 2rem",
+              background: "#1877f2",
+              color: "white",
+              textDecoration: "none",
+              borderRadius: "8px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              boxShadow: "0 4px 12px rgba(24,119,242,0.25)"
+            }}
+          >
+            👍 Share on Facebook →
           </a>
         </div>
       </section>
