@@ -1,5 +1,4 @@
 import React from "react";
-import "./Manifest.css";
 
 export default function Manifest() {
   return (
@@ -8,7 +7,7 @@ export default function Manifest() {
 
       <section>
         <p>
-          <em>Code</em> is not lines — it’s breath.
+          <em>Code</em> is not lines — it's breath.
           <br />
           Every <code>div</code> is a living cell,
           <br />
@@ -22,7 +21,7 @@ export default function Manifest() {
           <br />
           A flow seeking balance between form and light.
           <br />
-          We don’t build websites — we cultivate landscapes of consciousness
+          We don't build websites — we cultivate landscapes of consciousness
           <br />
           where text vibrates, reacts, breathes.
         </p>
@@ -44,7 +43,7 @@ export default function Manifest() {
           <br />
           interfaces that learn to feel,
           <br />
-          structures that don’t break — but heal.
+          structures that don't break — but heal.
         </p>
 
         <p>

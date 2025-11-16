@@ -1,12 +1,11 @@
 import React from "react";
-import "./AutogenicManifest.css";
 import livingCity1 from "../assets/living_city_1png";
 import livingCity2 from "../assets/living_city_2.png";
 import livingCity3 from "../assets/living_city_3.png";
 
 export default function AutogenicManifest() {
   return (
-    <div className="manifest">
+    <div className="autogenic-manifest">
       <h1>Autogenic Matter Manifesto</h1>
 
       <section>

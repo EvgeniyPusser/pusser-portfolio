@@ -1,29 +1,67 @@
-/* Row for first two project cards */
-.row {
-  display: flex;
-  gap: 150px;
-  margin-bottom: 2rem;
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
   color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-header,
-footer {
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ===========================
+   HEADER STYLES
+   =========================== */
+header {
   background: #222;
   color: white;
   padding: 1rem;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
+header h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+nav>a {
   margin: 0 10px;
   color: #00bcd4;
   text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+nav>a:hover {
+  color: #80deea;
 }
 
 /* Navigation sections with dropdowns */
@@ -38,107 +76,643 @@ nav a {
   cursor: pointer;
   font-weight: bold;
   padding: 5px 10px;
-  }
-  
-  .nav-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #333;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-    padding: 10px 0;
-  }
-  
-  .nav-section:hover .nav-dropdown {
-    display: block;
-  }
-  
-  .nav-dropdown a {
-    display: block;
-    margin: 5px 0;
-    padding: 8px 15px;
-    color: #00bcd4;
-    text-decoration: none;
-  }
-  
-  .nav-dropdown a:hover {
-    background: #444;
+  transition: color 0.3s ease;
 }
 
+.section-title:hover {
+  color: #80deea;
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.nav-section:hover .nav-dropdown {
+  display: block;
+}
+
+.nav-dropdown a {
+  display: block;
+  margin: 5px 0;
+  padding: 8px 15px;
+  color: #00bcd4;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.nav-dropdown a:hover {
+  background: #444;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  nav {
+    font-size: 0.875rem;
+  }
+
+  .nav-section {
+    margin: 5px;
+  }
+
+  .nav-dropdown {
+    left: 0;
+    transform: none;
+  }
+}
+
+/* ===========================
+   FOOTER STYLES
+   =========================== */
+footer {
+  background: #222;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: auto;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+/* ===========================
+   MAIN CONTENT STYLES
+   =========================== */
 main {
   padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - 200px);
 }
 
-button {
+main h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+main h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  margin: 1.5rem 0 1rem;
+  color: #333;
+}
+
+main p {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+main section {
+  margin-bottom: 2rem;
+}
+
+main ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+main li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  main ul {
+    margin-left: 1rem;
+  }
+}
+
+/* ===========================
+   BUTTON STYLES
+   =========================== */
+button,
+.btn {
   background: #00bcd4;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   margin: 1rem 0;
   cursor: pointer;
   border-radius: 5px;
-}
-
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-/* Custom image sizes for DeveloperProjects */
-
-.card img.img1 {
-  width: 420px;
+button:hover,
+.btn:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.card img.img2 {
-  max-width: 75%;
+.btn-blue {
+  padding: 0.7rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid #7cb6ff;
+  background: #2b8eff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(43, 142, 255, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.card img.img3 {
-  max-width: 80%;
+.btn-blue:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(43, 142, 255, 0.45);
 }
 
-/* Сетка для DeveloperProjects */
-.grid-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* две равные колонки */
-  grid-template-rows: auto auto;
-  gap: 2rem;
-  justify-items: center;
-  align-items: start;
-  max-width: 1200px;
-  /* ограничение ширины всей сетки */
-  margin: 0 auto;
-  /* по центру */
+/* Social Media Buttons */
+.btn-youtube {
+  background: #ff0000;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
 }
 
-/* Третья карточка занимает всю ширину */
-.grid-projects .card:nth-child(3) {
-  grid-column: 1 / span 2;
-  justify-self: center;
-  width: 60%;
-  /* чтобы нижняя не растягивалась слишком сильно */
+.btn-youtube:hover {
+  background: #cc0000;
 }
 
-/* Унифицированные размеры картинок */
+.btn-facebook {
+  background: #1877f2;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.25);
+}
+
+.btn-facebook:hover {
+  background: #145dbf;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 4px 12px rgba(188, 24, 136, 0.3);
+}
+
+.btn-instagram:hover {
+  opacity: 0.9;
+}
+
+.btn-stihi {
+  background: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.btn-stihi:hover {
+  background: #3a7bc8;
+}
+
+/* ===========================
+   CARD STYLES
+   =========================== */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: #222;
+  min-height: 3em;
+}
+
 .card img {
   width: 100%;
-  max-width: 400px;
-  /* все карточки одинаковой ширины */
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
+  margin: 1rem 0;
   object-fit: cover;
-  /* обрезка, чтобы не вытягивались */
+  min-height: 250px;
+  max-height: 350px;
+  flex-shrink: 0;
+}
+
+.card p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  color: #555;
+  margin-top: auto;
+}
+
+/* ===========================
+   GRID LAYOUTS
+   =========================== */
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* На больших экранах все карточки одинаковой ширины */
+.grid-projects .card {
+  width: 100%;
+}
+
+/* Tablet - 2 колонки */
+@media (max-width: 1024px) {
+  .grid-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-projects .card:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile - 1 колонка */
+@media (max-width: 768px) {
+  .grid-projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grid-projects .card:nth-child(3) {
+    grid-column: 1;
+    max-width: 100%;
+  }
+}
+
+/* ===========================
+   ABOUT PAGE STYLES
+   =========================== */
+.about-container {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.72) 60%, rgba(0, 0, 0, 0.85) 100%);
+  padding: 2rem 1.25rem;
+}
+
+.about-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: end;
+  gap: 2rem;
+  color: #fff;
+}
+
+.about-title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.about-description {
+  margin: 0.75rem 0 0;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.6;
+  max-width: 680px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+  opacity: 0.95;
+}
+
+.about-buttons {
+  justify-self: end;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about-buttons {
+    justify-self: start;
+  }
+}
+
+/* ===========================
+   MANIFEST STYLES
+   =========================== */
+.manifest {
+  background-color: #0b0b0b;
+  color: #e6e6e6;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.8;
+  min-height: 100vh;
+  padding: 80px 10%;
+}
+
+.manifest h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: rgba(3, 155, 100, 0.8);
+  text-align: center;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.manifest section {
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 2px solid rgba(3, 155, 100, 0.4);
+  padding-left: 2em;
+}
+
+.manifest p {
+  margin-bottom: 1.5em;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.manifest em {
+  color: rgba(3, 155, 100, 0.8);
+  font-style: normal;
+}
+
+.manifest footer {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .manifest {
+    padding: 60px 5%;
+  }
+
+  .manifest section {
+    padding-left: 1em;
+  }
+}
+
+/* ===========================
+   AUTOGENIC MANIFEST STYLES
+   =========================== */
+.autogenic-manifest {
+  background-color: #060606;
+  color: #e6e6e6;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.8;
+  min-height: 100vh;
+  padding: 80px 10%;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.autogenic-manifest h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: rgba(180, 255, 120, 0.8);
+  text-align: center;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.autogenic-manifest section {
+  max-width: 850px;
+  margin: 0 auto;
+  border-left: 2px solid rgba(180, 255, 120, 0.3);
+  padding-left: 2em;
+}
+
+.autogenic-manifest p {
+  margin-bottom: 1.5em;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.autogenic-manifest em {
+  color: rgba(180, 255, 120, 0.8);
+  font-style: normal;
+}
+
+.autogenic-manifest footer {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.manifest-img {
+  width: 100%;
+  max-width: 600px;
+  margin: 2em auto;
+  border-radius: 10px;
+  opacity: 0.95;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .autogenic-manifest {
+    padding: 60px 5%;
+  }
+
+  .autogenic-manifest section {
+    padding-left: 1em;
+  }
+
+  .manifest-img {
+    max-width: 100%;
+  }
+}
+
+/* ===========================
+   VIDEOS & SOCIAL LINKS
+   =========================== */
+.social-links-container {
+  text-align: center;
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links-container a {
+  text-decoration: none;
+}
+
+.social-link-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.social-description {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 576px) {
+  .social-links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-link-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ===========================
+   FORM STYLES
+   =========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+form button {
+  align-self: center;
+  min-width: 200px;
+}
+
+/* ===========================
+   UTILITY CLASSES
+   =========================== */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ===========================
+   RESPONSIVE UTILITIES
+   =========================== */
+@media (max-width: 576px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 577px) {
+  .show-mobile {
+    display: none;
+  }
+}
+
+/* ===========================
+   ACCESSIBILITY
+   =========================== */
+:focus {
+  outline: 2px solid #00bcd4;
+  outline-offset: 2px;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid #00bcd4;
+}
+
+/* Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-to-main:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }

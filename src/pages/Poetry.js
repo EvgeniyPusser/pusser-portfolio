@@ -6,66 +6,29 @@ export default function Poetry() {
       <section>
         <p>Мои стихи и поэтические размышления:</p>
 
-        <div
-          style={{
-            textAlign: "center",
-            margin: "2rem 0",
-            display: "flex",
-            gap: "1rem",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="social-links-container">
           <a
             href="https://www.instagram.com/pusserevgeniypoetry/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              padding: "1rem 2rem",
-              background:
-                "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
-              color: "white",
-              textDecoration: "none",
-              borderRadius: "8px",
-              fontSize: "18px",
-              fontWeight: "bold",
-              boxShadow: "0 4px 12px rgba(188,24,136,0.3)",
-            }}
           >
-            📖 Instagram
+            <button className="btn-instagram social-link-button">
+              📖 Instagram
+            </button>
           </a>
 
           <a
             href="https://stihi.ru/avtor/pusser88"
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              padding: "1rem 2rem",
-              background: "#4a90e2",
-              color: "white",
-              textDecoration: "none",
-              borderRadius: "8px",
-              fontSize: "18px",
-              fontWeight: "bold",
-              boxShadow: "0 4px 12px rgba(74,144,226,0.3)",
-            }}
           >
-            📝 Stihi.ru
+            <button className="btn-stihi social-link-button">
+              📝 Stihi.ru
+            </button>
           </a>
         </div>
 
-        <div
-          style={{
-            maxWidth: "600px",
-            margin: "0 auto",
-            textAlign: "center",
-            fontSize: "16px",
-            lineHeight: "1.6",
-            color: "#666",
-          }}
-        >
+        <div className="social-description">
           <p>
             Здесь вы найдёте мои стихи, поэтические эксперименты и размышления о
             жизни, искусстве и человеческой природе.
