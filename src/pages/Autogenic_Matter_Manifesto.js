@@ -6,7 +6,7 @@ import livingCity3 from "../assets/living_city_3.png";
 export default function AutogenicManifest() {
   return (
     <div className="autogenic-manifest">
-      <h1>Autogenic Matter Manifesto</h1>
+      <h1>🧬 Autogenic Matter Manifesto</h1>
 
       <section>
         <img

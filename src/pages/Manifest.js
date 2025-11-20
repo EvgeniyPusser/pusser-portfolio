@@ -3,7 +3,7 @@ import React from "react";
 export default function Manifest() {
   return (
     <div className="manifest">
-      <h1>Living Code Manifesto</h1>
+      <h1>📜 Living Code Manifesto</h1>
 
       <section>
         <p>

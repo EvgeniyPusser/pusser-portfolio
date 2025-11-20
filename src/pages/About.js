@@ -12,7 +12,7 @@ export default function About() {
       <div className="about-overlay">
         <div className="about-grid">
           <div>
-            <h1 className="about-title">Evgenii Bogomazov-Pusser</h1>
+            <h1 className="about-title">🎨 Evgenii Bogomazov-Pusser</h1>
             <p className="about-description">
               Entrepreneur, innovator, and musician (composer,
               multi-instrumentalist, arranger, singer, bandleader); also a poet
