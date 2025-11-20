@@ -1,6 +1,6 @@
 {
-  "short_name": "Evgenii Portfolio",
-  "name": "Evgenii Bogomazov-Pusser Portfolio",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
