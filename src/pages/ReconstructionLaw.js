@@ -24,7 +24,7 @@ export default function ReconstructionLaw() {
 
   return (
     <main>
-      <h2>Reconstruction & Legal Reform</h2>
+      <h2>⚖️ Reconstruction & Legal Reform</h2>
       {projects.map((p, index) => (
         <ProjectCard key={index} title={p.title} img={p.img} desc={p.desc} />
       ))}

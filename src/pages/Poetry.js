@@ -1,7 +1,7 @@
 export default function Poetry() {
   return (
     <main>
-      <h2>Poetry & Collages / Стихи</h2>
+      <h2>✍️ Poetry & Collages / Стихи</h2>
 
       <section>
         <p>Мои стихи и поэтические размышления:</p>

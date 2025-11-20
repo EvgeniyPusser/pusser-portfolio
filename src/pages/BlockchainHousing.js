@@ -19,7 +19,7 @@ export default function BlockchainHousing() {
 
   return (
     <main>
-      <h2>Blockchain in Housing</h2>
+      <h2>⛓️ Blockchain in Housing</h2>
       {projects.map((p, index) => (
         <ProjectCard key={index} title={p.title} img={p.img} desc={p.desc} />
       ))}

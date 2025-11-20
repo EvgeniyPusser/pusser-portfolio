@@ -24,7 +24,7 @@ export default function DeveloperProjects() {
 
   return (
     <main>
-      <h2>Developer Projects</h2>
+      <h2>🏗️ Developer Projects</h2>
       <div className="grid-projects">
         <ProjectCard {...projects[0]} imgClass="img1" />
         <ProjectCard {...projects[1]} imgClass="img2" />

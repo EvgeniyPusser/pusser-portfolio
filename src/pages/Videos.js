@@ -1,7 +1,7 @@
 export default function Videos() {
   return (
     <main>
-      <h2>My Videos</h2>
+      <h2>🎥 My Videos</h2>
 
       <section>
         <p>Check out my latest music videos and performances:</p>

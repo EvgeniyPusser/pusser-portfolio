@@ -1,7 +1,7 @@
 export default function Support() {
   return (
     <main>
-      <h2>Support My Education</h2>
+      <h2>💝 Support My Education</h2>
       <p>
         Your support helps me continue my studies and bring new ideas to life.
       </p>
