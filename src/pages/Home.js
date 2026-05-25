@@ -1,12 +1,17 @@
 export default function Home() {
   return (
-    <main>
-      <h2>🏠 Welcome</h2>
-      <p>
-        This is the personal site of Evgenii Pusser — an entrepreneur,
-        innovator, and musician (composer, multi-instrumentalist, arranger,
-        singer, and bandleader), as well as a poet and reformer.
-      </p>
+    <main className="home-manifest">
+      <section>
+        <p className="home-kicker">Personal archive</p>
+        <h1>Evgenii Bogomazov-Pusser</h1>
+        <p>
+          Entrepreneur, innovator, musician, poet and reformer.
+        </p>
+        <p>
+          This site gathers music, architectural work, development projects,
+          housing research, education and manifestos into one living portfolio.
+        </p>
+      </section>
     </main>
   );
 }

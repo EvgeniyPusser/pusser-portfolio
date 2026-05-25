@@ -1,6 +1,6 @@
 export default function Videos() {
   return (
-    <main>
+    <main className="dark-page videos-page">
       <h2>🎥 My Videos</h2>
 
       <section>

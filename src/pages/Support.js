@@ -1,6 +1,6 @@
 export default function Support() {
   return (
-    <main>
+    <main className="dark-page support-page">
       <h2>💝 Support My Education</h2>
       <p>
         Your support helps me continue my studies and bring new ideas to life.

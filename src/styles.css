@@ -1,7 +1,7 @@
 /* ===========================
    GLOBAL STYLES
    =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Great+Vibes&family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -336,6 +336,14 @@ button:hover,
 /* На больших экранах все карточки одинаковой ширины */
 .grid-projects .card {
   width: 100%;
+}
+
+.grid-projects .card img {
+  height: 260px;
+  min-height: 0;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Tablet - 2 колонки */
@@ -715,4 +723,278 @@ button:focus {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
+}
+
+/* ===========================
+   HOME MANIFEST
+   =========================== */
+.home-manifest {
+  background:
+    linear-gradient(90deg, rgba(22, 14, 6, 0.78), rgba(22, 14, 6, 0.18) 42%, rgba(22, 14, 6, 0.78)),
+    radial-gradient(circle at 24% 18%, rgba(188, 137, 68, 0.26), transparent 24rem),
+    linear-gradient(135deg, #2d2418 0%, #8f7a54 48%, #372819 100%);
+  color: #241a10;
+  min-height: calc(100vh - 150px);
+  max-width: none;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-manifest section {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  background:
+    linear-gradient(90deg, rgba(255, 247, 224, 0.88), rgba(242, 221, 176, 0.92)),
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.55), transparent 16rem);
+  border: 1px solid rgba(120, 82, 32, 0.58);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.38),
+    0 26px 70px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.home-manifest section::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(120, 82, 32, 0.35);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.home-kicker {
+  color: #78501f;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.home-manifest h1 {
+  font-family: 'Great Vibes', 'Cormorant Garamond', cursive;
+  color: #2b1b0d;
+  font-size: clamp(4rem, 11vw, 9rem);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: 0;
+  margin: 0 auto 1.35rem;
+  text-align: center;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.34);
+}
+
+.home-manifest p {
+  max-width: 720px;
+  color: #382819;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.home-manifest p:last-child {
+  color: #5c462d;
+  font-size: clamp(1.12rem, 2vw, 1.35rem);
+  max-width: 780px;
+}
+
+/* ===========================
+   ARCHIVE PAGES
+   =========================== */
+.archive-page {
+  max-width: 980px;
+  margin: 2rem auto;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.96), rgba(245, 236, 218, 0.96));
+  border: 1px solid rgba(145, 99, 42, 0.28);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(47, 35, 22, 0.12);
+}
+
+.archive-page h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #2b1b0d;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  margin-bottom: 1.8rem;
+}
+
+.archive-page section {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(145, 99, 42, 0.16);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.archive-page h3 {
+  color: #78501f;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  margin: 0 0 0.7rem;
+}
+
+.archive-page li,
+.archive-page p {
+  color: #463728;
+}
+
+.support-page {
+  text-align: center;
+}
+
+.support-page form {
+  margin-bottom: 0.8rem;
+}
+
+/* ===========================
+   DARK PROJECT AND SOCIAL PAGES
+   =========================== */
+.project-page,
+.dark-page {
+  background:
+    radial-gradient(circle at 14% 8%, rgba(197, 139, 53, 0.18), transparent 24rem),
+    linear-gradient(135deg, #080706 0%, #15110d 56%, #22180f 100%);
+  color: #eadfcb;
+  max-width: none;
+  min-height: calc(100vh - 150px);
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.project-page h2,
+.dark-page h2 {
+  color: #d5a14c;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 2rem;
+}
+
+.project-page .grid-projects {
+  max-width: 1180px;
+}
+
+.project-page .card {
+  background: rgba(244, 234, 211, 0.95);
+  border: 1px solid rgba(213, 161, 76, 0.45);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.34);
+}
+
+.project-page .card h3 {
+  color: #26190d;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  min-height: 0;
+}
+
+.project-page .card p {
+  color: #4b3925;
+}
+
+.project-page .card img {
+  height: 250px;
+  min-height: 0;
+  max-height: none;
+  object-fit: cover;
+}
+
+.dark-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dark-page section,
+.dark-page > p,
+.dark-page form,
+.dark-page > a {
+  max-width: 720px;
+}
+
+.dark-page section {
+  width: min(720px, 100%);
+  background: rgba(244, 234, 211, 0.08);
+  border: 1px solid rgba(213, 161, 76, 0.34);
+  border-radius: 8px;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+}
+
+.dark-page p {
+  color: rgba(234, 223, 203, 0.84);
+}
+
+.dark-page button,
+.dark-page .social-link-button {
+  border: 1px solid rgba(213, 161, 76, 0.55);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 768px) {
+  .project-page,
+  .dark-page {
+    padding: 1.25rem;
+  }
+}
+
+/* ===========================
+   GOLD HEADER
+   =========================== */
+.site-header {
+  background: #12100d;
+  border-bottom: 1px solid rgba(197, 139, 53, 0.42);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.24);
+}
+
+.site-brand {
+  color: #f3e8d0;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-nav > a,
+.site-nav .section-title {
+  color: #f3e8d0;
+  border: 1px solid rgba(197, 139, 53, 0.5);
+  border-radius: 999px;
+  padding: 0.48rem 0.85rem;
+  background: rgba(197, 139, 53, 0.08);
+  margin: 0;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.site-nav > a:hover,
+.site-nav .section-title:hover,
+.nav-section:hover .section-title {
+  color: #12100d;
+  background: #d5a14c;
+  border-color: #d5a14c;
+}
+
+.site-nav .nav-dropdown {
+  background: #17130e;
+  border: 1px solid rgba(197, 139, 53, 0.55);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.35);
+  padding: 0.45rem;
+}
+
+.site-nav .nav-dropdown a {
+  color: #f3e8d0;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.site-nav .nav-dropdown a:hover {
+  color: #12100d;
+  background: #d5a14c;
 }

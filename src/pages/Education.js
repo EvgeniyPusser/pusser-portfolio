@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <main>
+    <main className="archive-page education-page">
       <h2>📚 Education & Learning</h2>
 
       <section>

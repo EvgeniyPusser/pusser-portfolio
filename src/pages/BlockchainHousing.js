@@ -18,11 +18,13 @@ export default function BlockchainHousing() {
   ];
 
   return (
-    <main>
+    <main className="project-page">
       <h2>⛓️ Blockchain in Housing</h2>
-      {projects.map((p, index) => (
-        <ProjectCard key={index} title={p.title} img={p.img} desc={p.desc} />
-      ))}
+      <div className="grid-projects">
+        {projects.map((p, index) => (
+          <ProjectCard key={index} title={p.title} img={p.img} desc={p.desc} />
+        ))}
+      </div>
     </main>
   );
 }

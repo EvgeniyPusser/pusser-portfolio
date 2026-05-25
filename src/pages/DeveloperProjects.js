@@ -23,7 +23,7 @@ export default function DeveloperProjects() {
   ];
 
   return (
-    <main>
+    <main className="project-page">
       <h2>🏗️ Developer Projects</h2>
       <div className="grid-projects">
         <ProjectCard {...projects[0]} imgClass="img1" />
