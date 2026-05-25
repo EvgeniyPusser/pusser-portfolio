@@ -1,10 +1,10 @@
 export default function Poetry() {
   return (
-    <main className="content-page narrow-page">
-      <h2>Poetry & Collages</h2>
+    <main>
+      <h2>✍️ Poetry & Collages / Стихи</h2>
 
       <section>
-        <p>Poems, collages and short poetic experiments.</p>
+        <p>Мои стихи и поэтические размышления:</p>
 
         <div className="social-links-container">
           <a
@@ -13,7 +13,7 @@ export default function Poetry() {
             rel="noopener noreferrer"
           >
             <button className="btn-instagram social-link-button">
-              Instagram
+              📖 Instagram
             </button>
           </a>
 
@@ -22,14 +22,16 @@ export default function Poetry() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn-stihi social-link-button">Stihi.ru</button>
+            <button className="btn-stihi social-link-button">
+              📝 Stihi.ru
+            </button>
           </a>
         </div>
 
         <div className="social-description">
           <p>
-            A place for writing, image experiments and reflections on life, art
-            and human nature.
+            Здесь вы найдёте мои стихи, поэтические эксперименты и размышления о
+            жизни, искусстве и человеческой природе.
           </p>
         </div>
       </section>

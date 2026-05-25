@@ -1,7 +1,7 @@
 export default function Videos() {
   return (
-    <main className="content-page narrow-page">
-      <h2>My Videos</h2>
+    <main>
+      <h2>🎥 My Videos</h2>
 
       <section>
         <p>Check out my latest music videos and performances:</p>
@@ -13,7 +13,7 @@ export default function Videos() {
             rel="noopener noreferrer"
           >
             <button className="btn-youtube social-link-button">
-              Watch on YouTube
+              🎥 Watch on YouTube →
             </button>
           </a>
 
@@ -23,7 +23,7 @@ export default function Videos() {
             rel="noopener noreferrer"
           >
             <button className="btn-facebook social-link-button">
-              Share on Facebook
+              👍 Share on Facebook →
             </button>
           </a>
         </div>
