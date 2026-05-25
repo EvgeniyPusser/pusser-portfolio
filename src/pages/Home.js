@@ -3,7 +3,7 @@ export default function Home() {
     <main className="home-manifest">
       <section>
         <p className="home-kicker">Personal archive</p>
-        <h1>Evgenii Bogomazov-Pusser</h1>
+        <h1>Evgeniy Bogomazov-Pusser</h1>
         <p>
           Entrepreneur, innovator, musician, poet and reformer.
         </p>

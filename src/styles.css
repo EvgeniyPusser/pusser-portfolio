@@ -998,3 +998,87 @@ button:focus {
   color: #12100d;
   background: #d5a14c;
 }
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 0.85rem 0.75rem;
+    max-height: 100dvh;
+    overflow-y: auto;
+  }
+
+  .site-brand {
+    display: block;
+    margin-bottom: 0.85rem;
+    font-size: 1.45rem;
+  }
+
+  .site-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+    width: 100%;
+    font-size: 0.92rem;
+  }
+
+  .site-nav > a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .site-nav .nav-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .site-nav .section-title {
+    display: block;
+    width: 100%;
+    padding: 0.42rem 0.65rem;
+    border-radius: 6px;
+    color: #d5a14c;
+    background: rgba(197, 139, 53, 0.12);
+    text-align: left;
+    cursor: default;
+  }
+
+  .site-nav .nav-dropdown {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem;
+    min-width: 0;
+    width: 100%;
+    padding: 0;
+    transform: none;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .site-nav .nav-dropdown a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.45rem;
+    margin: 0;
+    padding: 0.45rem 0.55rem;
+    border: 1px solid rgba(197, 139, 53, 0.38);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #f3e8d0;
+    line-height: 1.15;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-nav .nav-dropdown {
+    grid-template-columns: 1fr;
+  }
+}
