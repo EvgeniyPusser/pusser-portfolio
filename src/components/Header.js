@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const navGroups = [
   {
@@ -29,20 +30,61 @@ const navGroups = [
 ];
 
 export default function Header() {
+  const [openGroup, setOpenGroup] = useState(null);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpenGroup(null);
+    setIsNavOpen(false);
+  }, [location.pathname]);
+
+  const closeNav = () => {
+    setOpenGroup(null);
+    setIsNavOpen(false);
+  };
+
   return (
-    <header className="site-header">
-      <Link to="/" className="site-brand">
-        Evgenii Bogomazov-Pusser
-      </Link>
+    <header className={`site-header${isNavOpen ? " nav-open" : " nav-closed"}`}>
+      <div className="site-header-top">
+        <Link to="/" className="site-brand" onClick={closeNav}>
+          Evgenii Bogomazov-Pusser
+        </Link>
+        <button
+          type="button"
+          className="nav-toggle"
+          aria-expanded={isNavOpen}
+          aria-label="Toggle navigation"
+          onClick={() => setIsNavOpen((current) => !current)}
+        >
+          Menu
+        </button>
+      </div>
 
       <nav className="site-nav" aria-label="Main navigation">
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={closeNav}>
+          Home
+        </Link>
         {navGroups.map((group) => (
-          <div className="nav-section" key={group.label}>
-            <span className="section-title">{group.label}</span>
+          <div
+            className={`nav-section${openGroup === group.label ? " is-open" : ""}`}
+            key={group.label}
+          >
+            <button
+              type="button"
+              className="section-title"
+              aria-expanded={openGroup === group.label}
+              onClick={() =>
+                setOpenGroup((current) =>
+                  current === group.label ? null : group.label
+                )
+              }
+            >
+              {group.label}
+            </button>
             <div className="nav-dropdown">
               {group.links.map((link) => (
-                <Link key={link.to} to={link.to}>
+                <Link key={link.to} to={link.to} onClick={closeNav}>
                   {link.label}
                 </Link>
               ))}
