@@ -13,10 +13,10 @@
     <meta name="author" content="Evgenii Bogomazov-Pusser" />
     <link rel="canonical" href="https://pusserbogomazov.com/" />
 
-    <!-- SVG-иконка: одна фигурка без подложки, сама меняет цвет под тему браузера -->
+    <!-- Порядок важен: Chrome берёт ПОСЛЕДНЮЮ подходящую строку.
+         Поэтому SVG идёт после запасных, а не перед ними. -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
-    <!-- запасные, для тех кто SVG-иконку не умеет -->
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
