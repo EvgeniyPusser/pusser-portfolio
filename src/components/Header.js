@@ -3,28 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const navGroups = [
   {
-    label: "Personal",
+    label: "Track Record",
     links: [
-      { to: "/education", label: "Education" },
-      { to: "/support", label: "Support" },
-    ],
-  },
-  {
-    label: "Music and Art",
-    links: [
-      { to: "/about", label: "Portfolio" },
-      { to: "/videos", label: "Videos" },
-      { to: "/poetry", label: "Poetry & Collages" },
-    ],
-  },
-  {
-    label: "Projects",
-    links: [
-      { to: "/manifest", label: "Manifest" },
-      { to: "/autogenic", label: "Autogenic" },
+      { to: "/reconstruction", label: "Reconstruction & Law" },
       { to: "/blockchain", label: "Blockchain" },
-      { to: "/developer", label: "Developer" },
-      { to: "/reconstruction", label: "Reconstruction" },
+      { to: "/developer", label: "Development" },
     ],
   },
 ];
@@ -64,6 +47,9 @@ export default function Header() {
       <nav className="site-nav" aria-label="Main navigation">
         <Link to="/" onClick={closeNav}>
           Home
+        </Link>
+        <Link to="/work" onClick={closeNav}>
+          Current Work
         </Link>
         {navGroups.map((group) => (
           <div

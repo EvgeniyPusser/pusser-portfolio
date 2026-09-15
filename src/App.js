@@ -2,16 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Education from "./pages/Education";
-import Support from "./pages/Support";
+import Work from "./pages/Work";
 import BlockchainHousing from "./pages/BlockchainHousing";
 import DeveloperProjects from "./pages/DeveloperProjects";
 import ReconstructionLaw from "./pages/ReconstructionLaw";
-import Manifest from "./pages/Manifest";
-import AutogenicManifest from "./pages/Autogenic_Matter_Manifesto";
-import Videos from "./pages/Videos";
-import Poetry from "./pages/Poetry";
 
 function App() {
   return (
@@ -19,16 +13,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/support" element={<Support />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/reconstruction" element={<ReconstructionLaw />} />
         <Route path="/blockchain" element={<BlockchainHousing />} />
         <Route path="/developer" element={<DeveloperProjects />} />
-        <Route path="/reconstruction" element={<ReconstructionLaw />} />
-        <Route path="/manifest" element={<Manifest />} />
-        <Route path="/autogenic" element={<AutogenicManifest />} />
-        <Route path="/videos" element={<Videos />} />
-        <Route path="/poetry" element={<Poetry />} />
       </Routes>
       <Footer />
     </Router>

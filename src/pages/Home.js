@@ -2,14 +2,16 @@ export default function Home() {
   return (
     <main className="home-manifest">
       <section>
-        <p className="home-kicker">Personal archive</p>
-        <h1>Evgeniy Bogomazov-Pusser</h1>
+        <p className="home-kicker">Independent research</p>
+        <h1>Evgenii Bogomazov-Pusser</h1>
         <p>
-          Entrepreneur, innovator, musician, poet and reformer.
+          I define research questions and assemble the people and resources to
+          answer them.
         </p>
         <p>
-          This site gathers music, architectural work, development projects,
-          housing research, education and manifestos into one living portfolio.
+          Living Things — whether artificial systems can keep what they learn
+          and pass it on. Earlier: shared property in housing, measured in
+          usefulness rather than square metres.
         </p>
       </section>
     </main>

@@ -1167,3 +1167,92 @@ button:focus {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===========================
+   CURRENT WORK PAGE
+   =========================== */
+.work-page {
+  background:
+    radial-gradient(circle at 14% 8%, rgba(197, 139, 53, 0.18), transparent 24rem),
+    linear-gradient(135deg, #080706 0%, #15110d 56%, #22180f 100%);
+  color: #eadfcb;
+  max-width: none;
+  min-height: calc(100vh - 150px);
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.work-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.work-page h2 {
+  color: #d5a14c;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 0.3rem;
+}
+
+.work-lede {
+  color: rgba(234, 223, 203, 0.7);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-style: italic;
+  margin-bottom: 2.6rem;
+}
+
+.work-block {
+  margin-bottom: 3rem;
+}
+
+.work-block:last-child {
+  margin-bottom: 0;
+}
+
+.work-block h3 {
+  color: #d5a14c;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.work-block p {
+  color: rgba(234, 223, 203, 0.9);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.work-block p:last-of-type {
+  margin-bottom: 0;
+}
+
+.work-note {
+  color: rgba(234, 223, 203, 0.58) !important;
+  font-size: clamp(0.95rem, 1.6vw, 1.02rem) !important;
+}
+
+.work-links {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1.3rem;
+}
+
+.work-links a {
+  color: #f3e8d0;
+  text-decoration: none;
+  border: 1px solid rgba(197, 139, 53, 0.55);
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  background: rgba(197, 139, 53, 0.08);
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.work-links a:hover {
+  background: #d5a14c;
+  color: #12100d;
+  border-color: #d5a14c;
+}
