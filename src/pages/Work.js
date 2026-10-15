@@ -1,82 +1,17 @@
+import { Link } from "react-router-dom";
+import { links, ExternalLink } from "../content";
+
 export default function Work() {
   return (
-    <main className="work-page">
-      <div className="work-inner">
-        <h2>Current Work</h2>
-        <p className="work-lede">Two projects, one question underneath both.</p>
-
-        <div className="work-block">
-          <h3>Living Things</h3>
-          <p>
-            Can artificial systems keep what they learn, separate the
-            adaptations that proved out from the ones that only looked good, and
-            pass those on to the systems that come after them?
-          </p>
-          <p>
-            The cycle under study: exposure → adaptation → evaluation →
-            selection → reuse by the next system. What interests me is not that
-            a system adapts, but what becomes of the adaptation afterwards — how
-            far it carries, and at what distance between two systems the
-            transfer stops paying for itself. That is measurable, and it is
-            where I want to begin.
-          </p>
-          <p className="work-note">
-            Living Things is a project, not a company, and holds no legal form.
-            It is at the stage of forming a research group and first
-            collaborations.
-          </p>
-        </div>
-
-        <div className="work-block">
-          <h3>traffic-engine</h3>
-          <p>
-            Forecasting the <em>distribution</em> of travel time on a Los
-            Angeles freeway corridor rather than its average — how much time a
-            traveller must set aside to be late once in ten trips instead of
-            once in three.
-          </p>
-          <p>
-            Built on 31,091 trips derived from Caltrans loop-detector data, 108
-            usable days out of 120. Every published figure is reproduced by a
-            single command. Where the first result came out too good to be true,
-            the question turned out to have been posed wrongly and was
-            rewritten; that audit is in the repository rather than removed.
-          </p>
-          <p className="work-note">
-            The models are AI-assisted; the question, the data, the corridor,
-            the metrics and the decision of what to publish are mine.
-          </p>
-          <div className="work-links">
-            <a
-              href="https://evgeniypusser.github.io/traffic-engine/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Results
-            </a>
-            <a
-              href="https://github.com/EvgeniyPusser/traffic-engine"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Code
-            </a>
-          </div>
-        </div>
-
-        <div className="work-block">
-          <h3>Who I am looking for</h3>
-          <p>
-            Researchers willing to argue about the first testable experiment —
-            including anyone who thinks the premise is wrong.
-          </p>
-          <div className="work-links">
-            <a href="mailto:evgeniipusser88@gmail.com">
-              evgeniipusser88@gmail.com
-            </a>
-          </div>
-        </div>
-      </div>
+    <main id="main-content" className="portfolio-page">
+      <section className="page-intro"><p className="eyebrow">Current projects</p><h1>From a research question<br />to something testable.</h1><p className="intro-lede">Interactive tools, simulation experiments and project concepts across buildings and transport.</p><p>I originate the questions and project structure and direct AI-assisted implementation. The projects below are research tools and prototypes, with their current stage made explicit.</p></section>
+      <section className="project-list" aria-label="Current project portfolio">
+        <article className="project-row" id="thermal"><div><p className="eyebrow">01 / Interactive simulation</p><h2>Building thermal calculator</h2><p className="project-state">Living Things research tool</p></div><div><p>Explore how a model building responds to weather, thermal properties and control choices. Compare behaviour under constrained heating capacity and examine the trade-off between indoor comfort and electricity use.</p><p>This is a simulation for investigating building-control questions. Field performance and energy savings require separate validation.</p><div className="action-links"><a className="primary-link" href={links.thermal}>Open English calculator ↗</a><ExternalLink href={links.thermalCode}>Source code</ExternalLink><Link to="/research#thermal-paper">Related paper</Link></div></div></article>
+        <article className="project-row" id="logistics"><div><p className="eyebrow">02 / Software prototype</p><h2>Holy Move</h2><p className="project-state">Moving-logistics calculator</p></div><div><p>A project for structuring moving quotes and logistics decisions, bringing operational inputs, route information and helper allocation into a single workflow.</p><p>The current implementation uses a frontend and backend, with local setup instructions in the repository.</p><div className="action-links"><ExternalLink className="primary-link" href={links.logistics}>View project & setup ↗</ExternalLink></div></div></article>
+        <article className="project-row"><div><p className="eyebrow">03 / Simulation & interface</p><h2>Egregor Cloud</h2><p className="project-state">Living Things application prototype</p></div><div><p>A navigable environment for exploring buildings, a house runtime and thermal experiments. It connects the broader Living Things concept with a concrete building interface.</p><div className="action-links"><ExternalLink href={links.egregor}>Explore Egregor source ↗</ExternalLink><ExternalLink href={links.simulation}>Simulation research</ExternalLink></div></div></article>
+        <article className="project-row"><div><p className="eyebrow">04 / Transport research</p><h2>traffic-engine</h2><p className="project-state">Reproducible forecasting experiments</p></div><div><p>Forecasting the distribution of travel time on a Los Angeles freeway corridor, rather than just the average. The practical question: how much time should a traveller allow for a chosen risk of arriving late?</p><p>The dataset contains 31,091 virtual trips derived from Caltrans loop-detector data, across 108 usable days out of 120. The repository documents the experiments, evaluation and audit of the results.</p><div className="action-links"><ExternalLink href={links.trafficResults}>View results ↗</ExternalLink><ExternalLink href={links.traffic}>Repository</ExternalLink></div></div></article>
+      </section>
+      <section className="opportunity-section"><p className="eyebrow">Directions under development</p><h2>Building for Israeli conditions.</h2><div className="direction-grid"><div><h3>On-site robotic construction</h3><p>A venture concept combining robotic concrete construction and reinforcement, international technology partners, local materials and thermal design.</p></div><div><h3>Adaptive and resilient buildings</h3><p>A proposed research direction for repeatable designs that detect failures, coordinate resources and maintain essential services during infrastructure disruptions.</p></div></div><p className="small-note">These are project concepts for feasibility studies and partnerships. Structural protection, implementation and performance remain engineering and research tasks.</p><a href={links.email}>Discuss a project ↗</a></section>
     </main>
   );
 }

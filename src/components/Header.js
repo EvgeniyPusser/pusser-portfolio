@@ -29,6 +29,7 @@ export default function Header() {
 
   return (
     <header className={`site-header${isNavOpen ? " nav-open" : " nav-closed"}`}>
+      <a href="#main-content" className="skip-to-main">Skip to content</a>
       <div className="site-header-top">
         <Link to="/" className="site-brand" onClick={closeNav}>
           Evgenii Bogomazov-Pusser
@@ -49,8 +50,10 @@ export default function Header() {
           Home
         </Link>
         <Link to="/work" onClick={closeNav}>
-          Current Work
+          Projects
         </Link>
+        <Link to="/research" onClick={closeNav}>Research</Link>
+        <Link to="/about" onClick={closeNav}>About & Contact</Link>
         {navGroups.map((group) => (
           <div
             className={`nav-section${openGroup === group.label ? " is-open" : ""}`}
